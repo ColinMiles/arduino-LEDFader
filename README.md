@@ -107,11 +107,11 @@ void loop() {
       // Up
       if (led->get_value() == 0) {
         byte color = random(100, 255);
-        led.fade(color, duration);
+        led->fade(color, duration);
       }
       // Down
       else {
-        led.fade(0, duration);
+        led->fade(0, duration);
       }
     }
   }
